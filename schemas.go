@@ -21,39 +21,37 @@ const (
 // TODO find all the possible waiting times
 type waitingTime string
 
-type RailEventAPIResponse struct {
-	Events []RailEvent
+// easyjson:json
+type TrainAPIResponse []Train
+
+// easyjson:json
+type Train struct {
+	Destination    string    `json:"DESTINATION"`
+	Direction      direction `json:"DIRECTION"`
+	EventTime      string    `json:"EVENT_TIME"`
+	Line           railLine  `json:"LINE"`
+	NextArrival    string    `json:"NEXT_ARR"`
+	Station        string    `json:"STATION"`
+	TrainID        string    `json:"TRAIN_ID"`
+	WaitingSeconds string    `json:"WAITING_SECONDS"`
+	WaitingTime    string    `json:"WAITING_TIME"`
 }
 
-// TODO: find better name
-type RailEvent struct {
-	Destination    string    `json:"destination"`
-	Direction      direction `json:"direction"`
-	EventTime      string    `json:"event_time"`
-	Line           railLine  `json:"line"`
-	NextArrival    string    `json:"next_arr"`
-	Station        string    `json:"station"`
-	TrainID        string    `json:"train_id"`
-	WaitingSeconds string    `json:"waiting_seconds"`
-	WaitingTime    string    `json:"waiting_time"`
-}
+// easyjson:json
+type BusAPIResponse []Bus
 
-type BusEventAPIResponse struct {
-	Events []BusEvent
-}
-
-type BusEvent struct {
-	Adherence string `json:"adherence"`
-	BlockID   string `json:"blockid"`
-	// TODO: find out what this actually is
-	BlockAbbreviation string `json:"block_abbr"`
-	Direction         string `json:"direction"`
-	Latitude          string `json:"latitude"`
-	Longitude         string `json:"longitude"`
-	MessageTime       string `json:"msgtime"`
-	Route             string `json:"route"`
-	StopID            string `json:"stopid"`
-	TimePoint         string `json:"timepoint"`
-	TripID            string `json:"tripid"`
-	Vehicle           string `json:"vehicle"`
+// easyjson:json
+type Bus struct {
+	Adherence         string `json:"ADHERENCE"`
+	BlockID           string `json:"BLOCKID"`
+	BlockAbbreviation string `json:"BLOCK_ABBR"` // TODO: find out what this actually is
+	Direction         string `json:"DIRECTION"`
+	Latitude          string `json:"LATITUDE"`
+	Longitude         string `json:"LONGITUDE"`
+	MessageTime       string `json:"MSGTIME"`
+	Route             string `json:"ROUTE"`
+	StopID            string `json:"STOPID"`
+	TimePoint         string `json:"TIMEPOINT"`
+	TripID            string `json:"TRIPID"`
+	Vehicle           string `json:"VEHICLE"`
 }
