@@ -1,0 +1,13 @@
+[
+  {
+    "DESTINATION": "Airport",
+    "DIRECTION": "S",
+    "EVENT_TIME": "12/1/2019 8:11:32 PM",
+    "LINE": "GOLD",
+    "NEXT_ARR": "08:11:41 PM",
+    "STATION": "COLLEGE PARK STATION",
+    "TRAIN_ID": "302506",
+    "WAITING_SECONDS": "-46",
+    "WAITING_TIME": "Boarding"
+  }
+]

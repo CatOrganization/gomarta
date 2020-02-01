@@ -1,0 +1,16 @@
+[
+  {
+    "ADHERENCE": "0",
+    "BLOCKID": "21",
+    "BLOCK_ABBR": "110-1",
+    "DIRECTION": "Southbound",
+    "LATITUDE": "33.7890561",
+    "LONGITUDE": "-84.386845",
+    "MSGTIME": "12/1/2019 8:53:01 PM",
+    "ROUTE": "110",
+    "STOPID": "901789",
+    "TIMEPOINT": "Arts Center Station",
+    "TRIPID": "6861689",
+    "VEHICLE": "1468"
+  }
+]
