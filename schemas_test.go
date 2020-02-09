@@ -20,6 +20,7 @@ func TestTrainAPIResponse(t *testing.T) {
 	require.NoError(t, err)
 
 	buff, err := ioutil.ReadAll(f)
+	require.NoError(t, err)
 
 	var trainResponse TrainAPIResponse
 	err = trainResponse.UnmarshalJSON(buff)
@@ -47,6 +48,7 @@ func TestBusAPIResponse(t *testing.T) {
 	require.NoError(t, err)
 
 	buff, err := ioutil.ReadAll(f)
+	require.NoError(t, err)
 
 	var busResponse BusAPIResponse
 	err = busResponse.UnmarshalJSON(buff)

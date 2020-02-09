@@ -1,25 +1,25 @@
 package gomarta
 
-type direction string
+type Direction string
 
 const (
-	directionNorth = "N"
-	directionSouth = "S"
-	directionEast  = "E"
-	directionWest  = "W"
+	DirectionNorth Direction = "N"
+	DirectionSouth Direction = "S"
+	DirectionEast  Direction = "E"
+	DirectionWest  Direction = "W"
 )
 
-type railLine string
+type RailLine string
 
 const (
-	railLineRed   = "Red"
-	railLineGold  = "Gold"
-	railLineBlue  = "Blue"
-	railLineGreen = "Green"
+	RailLineRed   RailLine = "Red"
+	RailLineGold  RailLine = "Gold"
+	RailLineBlue  RailLine = "Blue"
+	RailLineGreen RailLine = "Green"
 )
 
 // TODO find all the possible waiting times
-type waitingTime string
+type WaitingTime string
 
 // easyjson:json
 type TrainAPIResponse []Train
@@ -27,9 +27,9 @@ type TrainAPIResponse []Train
 // easyjson:json
 type Train struct {
 	Destination    string    `json:"DESTINATION"`
-	Direction      direction `json:"DIRECTION"`
+	Direction      Direction `json:"DIRECTION"`
 	EventTime      string    `json:"EVENT_TIME"`
-	Line           railLine  `json:"LINE"`
+	Line           RailLine  `json:"LINE"`
 	NextArrival    string    `json:"NEXT_ARR"`
 	Station        string    `json:"STATION"`
 	TrainID        string    `json:"TRAIN_ID"`
