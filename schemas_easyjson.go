@@ -17,7 +17,7 @@ var (
 	_ easyjson.Marshaler
 )
 
-func easyjson2189435aDecodeGithubComCatOrganizationGomarta(in *jlexer.Lexer, out *TrainAPIResponse) {
+func easyjson2189435aDecodeGithubComSmartatransitGomarta(in *jlexer.Lexer, out *TrainAPIResponse) {
 	isTopLevel := in.IsStart()
 	if in.IsNull() {
 		in.Skip()
@@ -45,7 +45,7 @@ func easyjson2189435aDecodeGithubComCatOrganizationGomarta(in *jlexer.Lexer, out
 		in.Consumed()
 	}
 }
-func easyjson2189435aEncodeGithubComCatOrganizationGomarta(out *jwriter.Writer, in TrainAPIResponse) {
+func easyjson2189435aEncodeGithubComSmartatransitGomarta(out *jwriter.Writer, in TrainAPIResponse) {
 	if in == nil && (out.Flags&jwriter.NilSliceAsEmpty) == 0 {
 		out.RawString("null")
 	} else {
@@ -63,27 +63,27 @@ func easyjson2189435aEncodeGithubComCatOrganizationGomarta(out *jwriter.Writer, 
 // MarshalJSON supports json.Marshaler interface
 func (v TrainAPIResponse) MarshalJSON() ([]byte, error) {
 	w := jwriter.Writer{}
-	easyjson2189435aEncodeGithubComCatOrganizationGomarta(&w, v)
+	easyjson2189435aEncodeGithubComSmartatransitGomarta(&w, v)
 	return w.Buffer.BuildBytes(), w.Error
 }
 
 // MarshalEasyJSON supports easyjson.Marshaler interface
 func (v TrainAPIResponse) MarshalEasyJSON(w *jwriter.Writer) {
-	easyjson2189435aEncodeGithubComCatOrganizationGomarta(w, v)
+	easyjson2189435aEncodeGithubComSmartatransitGomarta(w, v)
 }
 
 // UnmarshalJSON supports json.Unmarshaler interface
 func (v *TrainAPIResponse) UnmarshalJSON(data []byte) error {
 	r := jlexer.Lexer{Data: data}
-	easyjson2189435aDecodeGithubComCatOrganizationGomarta(&r, v)
+	easyjson2189435aDecodeGithubComSmartatransitGomarta(&r, v)
 	return r.Error()
 }
 
 // UnmarshalEasyJSON supports easyjson.Unmarshaler interface
 func (v *TrainAPIResponse) UnmarshalEasyJSON(l *jlexer.Lexer) {
-	easyjson2189435aDecodeGithubComCatOrganizationGomarta(l, v)
+	easyjson2189435aDecodeGithubComSmartatransitGomarta(l, v)
 }
-func easyjson2189435aDecodeGithubComCatOrganizationGomarta1(in *jlexer.Lexer, out *Train) {
+func easyjson2189435aDecodeGithubComSmartatransitGomarta1(in *jlexer.Lexer, out *Train) {
 	isTopLevel := in.IsStart()
 	if in.IsNull() {
 		if isTopLevel {
@@ -105,11 +105,11 @@ func easyjson2189435aDecodeGithubComCatOrganizationGomarta1(in *jlexer.Lexer, ou
 		case "DESTINATION":
 			out.Destination = string(in.String())
 		case "DIRECTION":
-			out.Direction = direction(in.String())
+			out.Direction = Direction(in.String())
 		case "EVENT_TIME":
 			out.EventTime = string(in.String())
 		case "LINE":
-			out.Line = railLine(in.String())
+			out.Line = RailLine(in.String())
 		case "NEXT_ARR":
 			out.NextArrival = string(in.String())
 		case "STATION":
@@ -130,7 +130,7 @@ func easyjson2189435aDecodeGithubComCatOrganizationGomarta1(in *jlexer.Lexer, ou
 		in.Consumed()
 	}
 }
-func easyjson2189435aEncodeGithubComCatOrganizationGomarta1(out *jwriter.Writer, in Train) {
+func easyjson2189435aEncodeGithubComSmartatransitGomarta1(out *jwriter.Writer, in Train) {
 	out.RawByte('{')
 	first := true
 	_ = first
@@ -185,27 +185,27 @@ func easyjson2189435aEncodeGithubComCatOrganizationGomarta1(out *jwriter.Writer,
 // MarshalJSON supports json.Marshaler interface
 func (v Train) MarshalJSON() ([]byte, error) {
 	w := jwriter.Writer{}
-	easyjson2189435aEncodeGithubComCatOrganizationGomarta1(&w, v)
+	easyjson2189435aEncodeGithubComSmartatransitGomarta1(&w, v)
 	return w.Buffer.BuildBytes(), w.Error
 }
 
 // MarshalEasyJSON supports easyjson.Marshaler interface
 func (v Train) MarshalEasyJSON(w *jwriter.Writer) {
-	easyjson2189435aEncodeGithubComCatOrganizationGomarta1(w, v)
+	easyjson2189435aEncodeGithubComSmartatransitGomarta1(w, v)
 }
 
 // UnmarshalJSON supports json.Unmarshaler interface
 func (v *Train) UnmarshalJSON(data []byte) error {
 	r := jlexer.Lexer{Data: data}
-	easyjson2189435aDecodeGithubComCatOrganizationGomarta1(&r, v)
+	easyjson2189435aDecodeGithubComSmartatransitGomarta1(&r, v)
 	return r.Error()
 }
 
 // UnmarshalEasyJSON supports easyjson.Unmarshaler interface
 func (v *Train) UnmarshalEasyJSON(l *jlexer.Lexer) {
-	easyjson2189435aDecodeGithubComCatOrganizationGomarta1(l, v)
+	easyjson2189435aDecodeGithubComSmartatransitGomarta1(l, v)
 }
-func easyjson2189435aDecodeGithubComCatOrganizationGomarta2(in *jlexer.Lexer, out *BusAPIResponse) {
+func easyjson2189435aDecodeGithubComSmartatransitGomarta2(in *jlexer.Lexer, out *BusAPIResponse) {
 	isTopLevel := in.IsStart()
 	if in.IsNull() {
 		in.Skip()
@@ -233,7 +233,7 @@ func easyjson2189435aDecodeGithubComCatOrganizationGomarta2(in *jlexer.Lexer, ou
 		in.Consumed()
 	}
 }
-func easyjson2189435aEncodeGithubComCatOrganizationGomarta2(out *jwriter.Writer, in BusAPIResponse) {
+func easyjson2189435aEncodeGithubComSmartatransitGomarta2(out *jwriter.Writer, in BusAPIResponse) {
 	if in == nil && (out.Flags&jwriter.NilSliceAsEmpty) == 0 {
 		out.RawString("null")
 	} else {
@@ -251,27 +251,27 @@ func easyjson2189435aEncodeGithubComCatOrganizationGomarta2(out *jwriter.Writer,
 // MarshalJSON supports json.Marshaler interface
 func (v BusAPIResponse) MarshalJSON() ([]byte, error) {
 	w := jwriter.Writer{}
-	easyjson2189435aEncodeGithubComCatOrganizationGomarta2(&w, v)
+	easyjson2189435aEncodeGithubComSmartatransitGomarta2(&w, v)
 	return w.Buffer.BuildBytes(), w.Error
 }
 
 // MarshalEasyJSON supports easyjson.Marshaler interface
 func (v BusAPIResponse) MarshalEasyJSON(w *jwriter.Writer) {
-	easyjson2189435aEncodeGithubComCatOrganizationGomarta2(w, v)
+	easyjson2189435aEncodeGithubComSmartatransitGomarta2(w, v)
 }
 
 // UnmarshalJSON supports json.Unmarshaler interface
 func (v *BusAPIResponse) UnmarshalJSON(data []byte) error {
 	r := jlexer.Lexer{Data: data}
-	easyjson2189435aDecodeGithubComCatOrganizationGomarta2(&r, v)
+	easyjson2189435aDecodeGithubComSmartatransitGomarta2(&r, v)
 	return r.Error()
 }
 
 // UnmarshalEasyJSON supports easyjson.Unmarshaler interface
 func (v *BusAPIResponse) UnmarshalEasyJSON(l *jlexer.Lexer) {
-	easyjson2189435aDecodeGithubComCatOrganizationGomarta2(l, v)
+	easyjson2189435aDecodeGithubComSmartatransitGomarta2(l, v)
 }
-func easyjson2189435aDecodeGithubComCatOrganizationGomarta3(in *jlexer.Lexer, out *Bus) {
+func easyjson2189435aDecodeGithubComSmartatransitGomarta3(in *jlexer.Lexer, out *Bus) {
 	isTopLevel := in.IsStart()
 	if in.IsNull() {
 		if isTopLevel {
@@ -324,7 +324,7 @@ func easyjson2189435aDecodeGithubComCatOrganizationGomarta3(in *jlexer.Lexer, ou
 		in.Consumed()
 	}
 }
-func easyjson2189435aEncodeGithubComCatOrganizationGomarta3(out *jwriter.Writer, in Bus) {
+func easyjson2189435aEncodeGithubComSmartatransitGomarta3(out *jwriter.Writer, in Bus) {
 	out.RawByte('{')
 	first := true
 	_ = first
@@ -394,23 +394,23 @@ func easyjson2189435aEncodeGithubComCatOrganizationGomarta3(out *jwriter.Writer,
 // MarshalJSON supports json.Marshaler interface
 func (v Bus) MarshalJSON() ([]byte, error) {
 	w := jwriter.Writer{}
-	easyjson2189435aEncodeGithubComCatOrganizationGomarta3(&w, v)
+	easyjson2189435aEncodeGithubComSmartatransitGomarta3(&w, v)
 	return w.Buffer.BuildBytes(), w.Error
 }
 
 // MarshalEasyJSON supports easyjson.Marshaler interface
 func (v Bus) MarshalEasyJSON(w *jwriter.Writer) {
-	easyjson2189435aEncodeGithubComCatOrganizationGomarta3(w, v)
+	easyjson2189435aEncodeGithubComSmartatransitGomarta3(w, v)
 }
 
 // UnmarshalJSON supports json.Unmarshaler interface
 func (v *Bus) UnmarshalJSON(data []byte) error {
 	r := jlexer.Lexer{Data: data}
-	easyjson2189435aDecodeGithubComCatOrganizationGomarta3(&r, v)
+	easyjson2189435aDecodeGithubComSmartatransitGomarta3(&r, v)
 	return r.Error()
 }
 
 // UnmarshalEasyJSON supports easyjson.Unmarshaler interface
 func (v *Bus) UnmarshalEasyJSON(l *jlexer.Lexer) {
-	easyjson2189435aDecodeGithubComCatOrganizationGomarta3(l, v)
+	easyjson2189435aDecodeGithubComSmartatransitGomarta3(l, v)
 }
