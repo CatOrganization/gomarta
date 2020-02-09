@@ -1,4 +1,4 @@
-module github.com/CatOrganization/gomarta
+module github.com/smartatransit/gomarta
 
 go 1.13
 
